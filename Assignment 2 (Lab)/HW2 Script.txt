@@ -1,0 +1,49 @@
+DROP TABLE rare_earth;
+
+CREATE TABLE rare_earth(id NUMBER(5) NOT NULL,element VARCHAR2(15) NOT NULL, uses VARCHAR2(40) NOT NULL, oxide_price_USD_per_kg VARCHAR2(23) NOT NULL,PRIMARY KEY(id));
+
+INSERT INTO rare_earth VALUES(10,'Lanthanum','Batteries\,Catalyst\,Lasers',40);
+INSERT INTO rare_earth VALUES(20,'Yttrium','Lasers\,Superconductors',50);
+INSERT INTO rare_earth VALUES(30,'Neodymium','Lasers\,Magnets\,Computers',60);
+INSERT INTO rare_earth VALUES(40,'Cerium','Catalyst\,Fuel additive',65);
+INSERT INTO rare_earth VALUES(50,'Praseodymium','Lasers\,Magnets\,Lighting\.Alloys',75);
+INSERT INTO rare_earth VALUES(60,'Gadolinium','Lasers\,Magnets\,Computers\,X-rays',150);
+INSERT INTO rare_earth VALUES(70,'Dysprosium','Lasers\,Magnets\,Cars',160);
+INSERT INTO rare_earth VALUES(80,'Erbium','Lasers\,Alloys\,Photography',165);
+INSERT INTO rare_earth VALUES(90,'Samarium','Lasers\,Magnets\,Neutron absorption',350);
+INSERT INTO rare_earth VALUES(100,'Ytterbium','Lasers\,Alloys\,Gamma rays',450);
+INSERT INTO rare_earth VALUES(110,'Holmium','Lasers\,Magnets\,Optics',750);
+INSERT INTO rare_earth VALUES(120,'Terbium','Lasers\,Phosphors\,Lighting',850);
+INSERT INTO rare_earth VALUES(130,'Europium','Lasers\,Phosphors\,Lighting',1200);
+INSERT INTO rare_earth VALUES(140,'Thulium','Lasers\,X-rays',2500);
+INSERT INTO rare_earth VALUES(150,'Lutetium','Catalyst\,Medicine',2500);
+INSERT INTO rare_earth VALUES(160,'Scandium','Lasers\,Lighting\,Aerospace',3500);
+INSERT INTO rare_earth VALUES(170,'Promethium','Nuclear batteries','TBD');Would like this done by 3/27, but will be forgiving.
+
+ALTER TABLE rare_earth ADD (atomic_number NUMBER(3), symbol VARCHAR2(5));
+
+UPDATE rare_earth SET atomic_number=57 , symbol='La' where id=10;
+UPDATE rare_earth SET atomic_number=39 , symbol='Y' where id=20;
+UPDATE rare_earth SET atomic_number=60 , symbol='Nd' where id=30;
+UPDATE rare_earth SET atomic_number=58 , symbol='Ce' where id=40;
+UPDATE rare_earth SET atomic_number=59 , symbol='Pr' where id=50;
+UPDATE rare_earth SET atomic_number=64 , symbol='Gd' where id=60;
+UPDATE rare_earth SET atomic_number=66 , symbol='Dy' where id=70;
+UPDATE rare_earth SET atomic_number=68 , symbol='Er' where id=80;
+UPDATE rare_earth SET atomic_number=62 , symbol='Sm' where id=90;
+UPDATE rare_earth SET atomic_number=70 , symbol='Yb' where id=100;
+UPDATE rare_earth SET atomic_number=67 , symbol='Ho' where id=110;
+UPDATE rare_earth SET atomic_number=65 , symbol='Tb' where id=120;
+UPDATE rare_earth SET atomic_number=63 , symbol='Eu' where id=130;
+UPDATE rare_earth SET atomic_number=69 , symbol='Tm' where id=140;
+UPDATE rare_earth SET atomic_number=71 , symbol='Lu' where id=150;
+UPDATE rare_earth SET atomic_number=21 , symbol='Sc' where id=160;
+UPDATE rare_earth SET atomic_number=61 , symbol='Pm' where id=170;
+
+ALTER TABLE rare_earth ADD (comments CLOB);
+
+UPDATE rare_earth SET comments='Scandium is a chemical element with the symbol Sc and atomic number 21. A silvery-white metallic d-block element, it has historically been classified as a rare-earth element, together with yttrium and the lanthanides. It was discovered in 1879 by spectral analysis of the minerals euxenite and gadolinite from Scandinavia.' where id=160;
+
+UPDATE rare_earth SET comments='Samarium is a chemical element with the symbol Sm and atomic number 62. It is a moderately hard silvery metal that slowly oxidizes in air. The last compound is a common reducing agent in chemical synthesis. Samarium was discovered in 1879 by the French chemist Paul-Émile Lecoq de Boisbaudran and named after the mineral samarskite from which it was isolated.' where id=90;
+
+UPDATE rare_earth SET comments='Praseodymium is a chemical element with the symbol Pr and atomic number 59. Praseodymium is a soft, silvery, malleable and ductile metal, valued for its magnetic, electrical, chemical, and optical properties. In 1885, the Austrian chemist Baron Carl Auer von Welsbach separated didymium into two elements that gave salts of different colours, which he named praseodymium and neodymium.' where id=50;

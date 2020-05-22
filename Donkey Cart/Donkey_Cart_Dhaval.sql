@@ -1,0 +1,337 @@
+DROP TABLE donkey_cart;
+
+CREATE TABLE donkey_cart(
+  id NUMBER PRIMARY KEY,
+  name VARCHAR2(32),
+  shape MDSYS.SDO_GEOMETRY);
+
+
+INSERT INTO donkey_cart VALUES(
+  1,
+  'Polygon',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,1),
+    MDSYS.SDO_ORDINATE_ARRAY(31.22, 10.02, 32.99, 8.34, 33.04, 6.47, 32, 6, 30.66, 7.57, 28.09, 5.55, 27.38, 4.4, 26.45, 3.14, 27.2, 2.03, 26.26, 2.03, 25.51, 3.22, 26.45, 4.4, 21.4, 4.43, 20.33, 3.02, 21.22, 2.03, 20.47, 2.03, 19.58, 3.02, 20.7, 4.43, 18.74, 4.44, 17.71, 5.97, 21.36, 5.97, 21.36, 6.92, 17.66, 6.92, 18.04, 7.46, 16.03, 6.92, 17.94, 8.26, 28.04, 8.3, 30, 10, 29.3, 11.47, 30.56, 10.63, 31.45, 11.63)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  2,
+  'Polygon',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,1),
+    MDSYS.SDO_ORDINATE_ARRAY(21.96, 8.28, 21.4, 7.54, 25.66, 7.54, 26.17, 8.29)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  3,
+  'Polygon',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,1),
+    MDSYS.SDO_ORDINATE_ARRAY(2.01, 9.03, 3.08, 10.98, 4.53, 10.98, 4.53, 9.03)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  4,
+  'Polygon',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,1),
+    MDSYS.SDO_ORDINATE_ARRAY(4.53, 9.03, 4.53, 10.98, 6, 12, 8, 12, 10.05, 10.67, 10, 9.03)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  5,
+  'Polygon',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,1),
+    MDSYS.SDO_ORDINATE_ARRAY(10.05, 10.67, 12.94, 9.03, 10, 9.03)
+  )
+);
+
+
+INSERT INTO donkey_cart VALUES(
+  6,
+  'Circle',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,4),
+    MDSYS.SDO_ORDINATE_ARRAY(29.39, 17.44, 32.15, 18.32, 31.22, 16.21)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  7,
+  'Circle',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,4),
+    MDSYS.SDO_ORDINATE_ARRAY(8.32, 5.98, 5.28, 3.94, 8.36, 1.95)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  8,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(18.88, 18.85, 19.53, 18.39)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  9,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(19.53, 18.39, 20.09, 19.01)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  10,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(17.71, 18.24, 18.13, 17.55)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  11,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(18.13, 17.55, 18.5, 18.16)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  12,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(19.21, 17.63, 19.67, 17.13)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  13,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(19.67, 17.13, 20.14, 17.74)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  14,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(4.53, 9.03, 8, 12)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  15,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(6, 12, 10, 9.03)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  16,
+  'Rectangle',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,3),
+    MDSYS.SDO_ORDINATE_ARRAY(2.01, 6.92, 12.94, 9.03)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  17,
+  'Rectangle',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,3),
+    MDSYS.SDO_ORDINATE_ARRAY(4, 6, 21.36, 6.92)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  18,
+  'Polygon',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,1),
+    MDSYS.SDO_ORDINATE_ARRAY(16, 10, 16, 12, 15.23, 11.74, 14.67, 12.24, 14.86, 12.85, 14.67, 13.54, 16, 14, 16.73, 14.3, 16.87, 13.65, 17.94, 13.12, 17.94, 13.12, 17.66, 12.39, 16.73, 11.97, 16.73, 10.02)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  19,
+  'Polygon',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,1),
+    MDSYS.SDO_ORDINATE_ARRAY(2, 14, 6, 18, 10, 14)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  20,
+  'Polygon',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,1),
+    MDSYS.SDO_ORDINATE_ARRAY(10, 14, 8, 16, 14.11, 19.16, 19.11, 13.77)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  21,
+  'Polygon',
+  MDSYS.SDO_GEOMETRY(
+    2003,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,1003,1),
+    MDSYS.SDO_ORDINATE_ARRAY(19.11, 13.77, 22.8, 18.81, 26, 14)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  22,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(4.53, 16.53, 6.72, 17.28)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  23,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(11.26, 17.68, 15.49, 17.68)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  24,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(21.39, 16.88, 23.55, 17.7)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  25,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(30.8, 8.53, 31.4, 8.87)
+  )
+);
+
+INSERT INTO donkey_cart VALUES(
+  26,
+  'Line',
+  MDSYS.SDO_GEOMETRY(
+    2,
+    NULL,
+    NULL,
+    MDSYS.SDO_ELEM_INFO_ARRAY(1,2,1),
+    MDSYS.SDO_ORDINATE_ARRAY(31.25, 6.88, 33.01, 7.57)
+  )
+);
+
+
+INSERT INTO USER_SDO_GEOM_METADATA 
+ VALUES (
+ 'donkey_cart',
+ 'shape',
+ MDSYS.SDO_DIM_ARRAY(
+   MDSYS.SDO_DIM_ELEMENT('X', 0, 20, 0.005),
+     MDSYS.SDO_DIM_ELEMENT('Y', 0, 20, 0.005)
+    ),
+ NULL
+);
+
+
+CREATE INDEX donkey_cart_idx
+ON donkey_cart(shape)
+INDEXTYPE IS MDSYS.SPATIAL_INDEX;
